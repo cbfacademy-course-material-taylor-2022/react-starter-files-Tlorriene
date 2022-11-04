@@ -4,7 +4,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Tiffany's React Page</h1>
       <h2>My first react Page</h2>
       <header className="App-title">
         <img src={logo} className="App-logo" alt="logo" />
@@ -29,10 +28,10 @@ function App() {
 }
 
 const h1Style = {
-  'fontStyle' : '40px',
-  'colour': '#cc0000',
+  'fontStyle' : '60px',
+  'colour': '#cc4533',
   'textTransform': 'lowercase'
 
 };
-
+<h1 style={h1Style}>Tiffany's react page</h1>
 export default App;
