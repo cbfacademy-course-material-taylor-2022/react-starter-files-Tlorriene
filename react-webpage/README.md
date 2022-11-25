@@ -36,7 +36,12 @@ function ClickableButton() {
   const [clicked, setClick] = React.useState(false);
 
   if (clicked) {
-    return 'Nothing here yet! Change this text to add more info.';
+    return React.createElement (
+      <h1>I am an element</h1>
+      style:{
+        colour: "#fff",
+        backgroundColor: "#5443e3",
+      })
   }
 
   return React.createElement(
@@ -48,7 +53,8 @@ function ClickableButton() {
       padding: "10px 20px",
       fontWeight: "bold",
       borderRadius: "5px",
-      fontSize: "1.1em"
+      fontSize: "1.1em",
+      textAlign: "center",
     },
     onClick: () => setClick(true)
   },
